@@ -10,6 +10,14 @@ capture/promotion/check-evasion quiescence, a transposition table, killer
 moves, and piece-square tables. It plays the make.fun tiny-chess-01 gauntlet
 through the environment protocol (`MAKEFUN_ENV_URL`).
 
+## Engine
+
+v10: 4,047-byte packed entry (cap 4,096). Alpha-beta with PVS, null-move
+pruning, late-move reductions, check extensions, quiescence (stand-pat only
+when not in check), killer moves, and a tapered king table. Local practice
+trials average 1,466 Elo (trial-1 1,654, trial-0 1,279), above the ~1,365
+house baseline. Perft verified.
+
 ## Run it
 
 ```sh
